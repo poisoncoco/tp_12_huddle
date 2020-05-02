@@ -1,0 +1,14 @@
+.nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 10rem; 
+&__logo__img{
+    width:15rem ;
+}
+@media screen and (min-width:680px){
+    margin-left: 10rem;
+    margin-right: 10rem;
+    
+ }
+}

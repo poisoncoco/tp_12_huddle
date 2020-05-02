@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+html {
+  font-size: 100%;
+}
+@media screen and (min-width: 420px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+.nav__logo__img {
+  width: 15rem;
+}
+@media screen and (min-width: 680px) {
+  .nav {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+}
+
+.btn {
+  border-radius: 5rem;
+  padding: 1rem 4rem;
+  border: none;
+  outline: none;
+  box-shadow: 1px 1px 5px #8f8f8f;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: bold;
+}
+.btn--grey {
+  background-color: white;
+}
+.btn--pink {
+  background-color: #ff52bf;
+  color: white;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.8rem;
+}
+@media screen and (min-width: 680px) {
+  .hero {
+    flex-direction: row;
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+}
+.hero__info {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 680px) {
+  .hero__info {
+    width: 80%;
+    margin-right: 15rem;
+  }
+}
+.hero__description {
+  margin: 3rem 0;
+  line-height: 3.3rem;
+}
+.hero__title {
+  font-size: 3rem;
+}
+
+.card {
+  width: 90%;
+  box-shadow: 1px 1px 5px #8f8f8f;
+  background-color: white;
+  border-radius: 2rem;
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 2rem;
+  border: none;
+}
+@media screen and (min-width: 680px) {
+  .card {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.card__img {
+  width: 80%;
+}
+@media screen and (min-width: 680px) {
+  .card__img {
+    margin-left: 10rem;
+  }
+}
+.card__info {
+  text-align: center;
+  padding: 2rem;
+}
+@media screen and (min-width: 680px) {
+  .card__info {
+    text-align: start;
+    margin: 10rem;
+    width: 70%;
+  }
+}
+.card__title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.card__description {
+  font-size: 1.5rem;
+  color: #7d8287;
+}
+.card--float {
+  width: 95%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -50px;
+}
+@media screen and (min-width: 680px) {
+  .card--float {
+    width: 60rem;
+    margin-bottom: -150px;
+  }
+}
+@media screen and (min-width: 680px) {
+  .card--dos {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+.card p {
+  line-height: 3.3rem;
+}
+
+.image {
+  width: 100%;
+}
+
+body {
+  font-family: "Open Sans";
+  background-color: whitesmoke;
+  /*  font-size: 1.8rem; */
+}
+
+header {
+  background-color: #ebfbff;
+  background: url(../images/bg-hero-mobile.svg);
+  width: 100vw;
+  padding: 2rem 2rem;
+  background-color: #ebfbff;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #00252e;
+  color: white;
+  padding: 3rem;
+  padding-top: 70px;
+  /* &__social{
+      margin-top: 5rem;
+      margin-bottom: 5rem;   
+  } */
+}
+@media screen and (min-width: 680px) {
+  .footer {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 680px) {
+  .footer__content {
+    width: 20%;
+  }
+}
+.footer__contact-info {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  font-size: 1.8rem;
+}
+.footer__img-phone {
+  width: 5%;
+  height: 5%;
+  margin-right: 2rem;
+  align-self: center;
+}
+.footer__img-location {
+  align-self: flex-start;
+  width: 5%;
+  height: 5%;
+  margin-right: 2rem;
+}
+.footer__img-email {
+  width: 5%;
+  height: 5%;
+  margin-right: 2rem;
+  align-self: center;
+}
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+}
+@media screen and (min-width: 680px) {
+  .footer__nav {
+    margin-top: 6rem;
+    margin-bottom: 10rem;
+    line-height: 4rem;
+  }
+}
+.footer__social-media {
+  text-align: center;
+}
+@media screen and (min-width: 680px) {
+  .footer__social-media {
+    margin-top: 6rem;
+  }
+}
+.footer__img-logo {
+  width: 50%;
+  margin-top: 2rem;
+}
+.footer .footer__copyright {
+  font-size: 1rem;
+}
+@media screen and (min-width: 680px) {
+  .footer .footer__copyright {
+    margin-top: 20rem;
+  }
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.footer i {
+  border: 0.1rem solid white;
+  border-radius: 50rem;
+  padding: 1rem 1rem;
+}
+@media screen and (min-width: 680px) {
+  .footer i {
+    border: 0.1rem solid white;
+    border-radius: 50rem;
+    padding: 1rem 1rem;
+    margin-left: 2rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

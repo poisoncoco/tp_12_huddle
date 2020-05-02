@@ -1,0 +1,93 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: $very-dark-cyan;
+    color: $white;
+    padding: 3rem;
+    padding-top: 70px;
+    @media screen and (min-width:680px){
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        display: flex;
+        flex-direction: row;
+    }
+    &__content{
+        @media screen and (min-width:680px){
+            width: 20%;
+        }
+         
+    }
+    &__contact-info{
+        display: flex;
+        flex-direction: row;
+        padding: 2rem;
+        font-size: 1.8rem;
+    }
+    &__img-phone{
+        width: 5%;
+        height: 5%;
+        margin-right: 2rem;
+        align-self: center;
+    }
+    &__img-location{
+        align-self: flex-start;
+        width: 5%;
+        height: 5%;
+        margin-right: 2rem;
+    }
+    &__img-email{
+        width: 5%;
+        height: 5%;
+        margin-right: 2rem;
+        align-self: center;
+    }
+    &__nav{
+        display:flex;
+        flex-direction: column;
+        font-size: 1.8rem;
+        @media screen and (min-width:680px){
+            margin-top: 6rem;
+            margin-bottom: 10rem;
+            line-height: 4rem;
+        }
+    }
+    &__social-media{
+        text-align: center;
+        @media screen and (min-width:680px){
+          margin-top: 6rem;
+        }
+    }
+    /* &__social{
+        margin-top: 5rem;
+        margin-bottom: 5rem;   
+    } */
+    &__img-logo{
+        width: 50%;
+        margin-top: 2rem;
+    }
+    .footer__copyright{
+        font-size: 1rem;
+        @media screen and (min-width:680px){
+            margin-top: 20rem;
+        }
+
+    }
+    a{
+        text-decoration: none;
+        color: $white;
+    }
+    i{
+        border: 0.1rem solid $white;
+        border-radius: 50rem;
+        padding: 1rem 1rem;
+        @media screen and (min-width:680px){
+            border: 0.1rem solid $white;
+            border-radius: 50rem;
+            padding: 1rem 1rem;
+            margin-left: 2rem;
+            
+        }
+    }
+
+}
